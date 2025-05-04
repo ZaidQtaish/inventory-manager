@@ -14,7 +14,6 @@ $sql = "INSERT INTO items (ItemName, Quantity, Price, Description, image)
 
 $result = odbc_exec($conn, $sql);
 
-
 move_uploaded_file($_FILES['image']['tmp_name'], '../images/' . $image); // Store image
 
 $tmpName = $_FILES['image']['tmp_name'];

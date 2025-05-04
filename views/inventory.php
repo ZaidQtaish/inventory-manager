@@ -22,7 +22,7 @@ if (isset($_GET['logout'])) { // Handle logout
 <body>
     <h2 class='title'>Inventory Manager</h2>
     <main>
-        <section>
+        <section class="cards">
         <!-- Read items table -->
         <?php
         include('../utils/db.php'); // Connect to DB

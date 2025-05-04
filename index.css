@@ -1,27 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
-    font-family: 'Inter';
-    font-size: 18px !important;
+    min-height: 100vh;
+    background-color: #f5f5f5;
 }
 
-fieldset {
-    width: 300px;
+.login-field {
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-legend {
+.login-field legend {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
     margin-bottom: 15px;
-    font-size: 20px;
-    font-weight: 700;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
 }
 
-form > input {
-    margin-bottom: 20px;
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+p {
+    font-size: 14px;
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+    .login-field {
+        padding: 20px;
+    }
+
+    .login-field legend {
+        font-size: 20px;
+    }
 }
