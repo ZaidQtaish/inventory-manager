@@ -50,7 +50,7 @@ if (isset($_GET['logout'])) { // Handle logout
         <section>
         <!-- Add items -->
         <h3>Add New Item</h3>
-        <form action="../actions/add_item.php" method="post">
+        <form action="../actions/add_item.php" method="POST" enctype="multipart/form-data">
             <input type="text" name="ItemName" placeholder="Item Name" required>
             <input type="number" name="Quantity" placeholder="Quantity" required>
             <input type="number" step="0.01" name="Price" placeholder="Price" required>
