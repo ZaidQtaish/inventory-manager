@@ -1,0 +1,48 @@
+* {
+    font-family: 'Inter';
+}
+
+.title {
+    text-align: center;
+}
+
+body {
+    padding: 10px 30px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 70px;
+    display: inline;
+}
+
+.item-card {
+    display: flex;
+}
+
+.item-card>* {
+    margin: 0;
+    margin-right: 20px;
+}
+
+section>form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logout {
+    margin-top: 100px;
+}
+
+.delete-btn {
+    color: #dc3545;
+}
+
+.edit-btn {
+    color: #6c757d;
+}

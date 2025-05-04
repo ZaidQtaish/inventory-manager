@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    font-family: 'Inter';
+    font-size: 18px !important;
+}
+
+fieldset {
+    width: 300px;
+}
+
+legend {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > input {
+    margin-bottom: 20px;
+}
