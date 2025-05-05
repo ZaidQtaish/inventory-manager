@@ -31,7 +31,6 @@ if (isset($_GET['logout'])) { // Handle logout
         $sql = "SELECT * FROM items";
         $result = odbc_exec($conn, $sql);
 
-        echo "<pre>";
         while ($row = odbc_fetch_array($result)) {
             echo "
             <div class='item-card'>
@@ -44,7 +43,6 @@ if (isset($_GET['logout'])) { // Handle logout
                 <a href='../actions/delete_item.php?id={$row['ID']}' class='delete-btn'><i class='fa-solid fa-trash'></i></a>   
             </div>";
         }
-        echo "</pre>";
         ?>
         </section>
         <section>
