@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Login</title>
 </head>
 <body>
-    <fieldset class='login-field'>
+    <fieldset>
     <legend>Login</legend>
     
     <?php if (isset($error)) { echo "<p style='color:red;'>$error</p>"; } ?>
@@ -46,6 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="password" id="password" name="password" required><br>
 
         <input type="submit" value="Login">
+        <p class="register">Don't have an account? <a href="views/register.php">Register</a></p>
     </form>
 </fieldset>
 </body>

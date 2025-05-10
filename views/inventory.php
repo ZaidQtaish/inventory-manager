@@ -45,7 +45,7 @@ if (isset($_GET['logout'])) { // Handle logout
         }
         ?>
         </section>
-        <section>
+        <section class="add-section">
         <!-- Add items -->
         <h3>Add New Item</h3>
         <form action="../actions/add_item.php" method="POST" enctype="multipart/form-data">
